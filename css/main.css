@@ -1,0 +1,1034 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  html {
+    font-family: 'Ubuntu';
+    font-size: 16px;
+  }
+  
+  body {
+    align-items: flex-start;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* ==========================================================================
+     Mobile - General Tag Styles
+     ========================================================================== */
+  a {
+    color: #c4c4c4;
+    text-decoration: none;
+  }
+  
+  /* ==========================================================================
+     Mobile - General Class Styles
+     ========================================================================== */
+  .page-heading {
+    font-family: 'Righteous';
+    font-size: 1.25em;
+    margin-bottom: 25px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .action-button {
+    background-color: #23a092;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .drop-down-bar {
+    align-items: center;
+    background-color: #c4c4c4;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    font-family: 'Righteous';
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    width: 100%;
+  }
+  
+  .section-container {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  
+  /* ==========================================================================
+     Mobile - Header Styles
+     ========================================================================== */
+  header {
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  header #logo {
+    font-family: Righteous;
+    padding: 10px;
+  }
+
+  #logo a {
+    font-size: 1.3em;
+  }
+  
+  header #menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  } 
+  
+  #menu #menu-button {
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    color: #c4c4c4;
+    display: flex;
+    font-size: 1.3em;
+    justify-content: center;
+  }
+
+  header #nav-container {
+    align-items: center;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  #nav-container #nav {
+    width: 100%;
+  }
+  
+  #nav #page-list{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 4%;
+    width: 100%;
+  }
+
+  #page-list .list-item {
+    padding: 5px;
+  }
+
+  #page-list a {
+    color: #ffffff;
+  }
+  
+  
+  /* ==========================================================================
+     Mobile - All Main Styles
+     ========================================================================== */
+  main {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  main #page-container {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 30px 4%;
+    width: 100%;
+  }
+
+  
+  /* ==========================================================================
+     Mobile - Home - Main
+     ========================================================================== */
+  #home #page-container {
+    padding: 50px 4%;
+  }
+  
+  #page-container #intro {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  #intro .my-name {
+    font-size: 3.5em;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  #intro .my-work-title {
+    color: #c4c4c4;
+    font-size: 1.125em;
+    font-weight: 400;
+    margin-top: 15px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  main #intro-message {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  #intro-message p {
+    font-family: Roboto;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  #intro-message button {
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  
+  
+  /* ==========================================================================
+     Mobile - My Work - Main
+     ========================================================================== */
+  .project-card {
+    align-items: flex-start;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 10px 0 40px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  
+  .project-card .project-description {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .project-description .project-title {
+    background-color: #c4c4c4;
+    color: #ffffff;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .project-description .project-text {
+    line-height: 1.6;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .project-description .tool-group {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .tool-group .tool {
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin: 0 10px 10px 0;
+  }
+  
+  .project-card .project-img {
+    background-color: #c4c4c4;
+    height: 150px;
+    margin: 0 15px;
+    width: 100%;
+  }
+
+  .project-card .project-links {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .project-links .action-button {
+    margin: 25px 15px 0;
+    width: 100%;
+  }
+
+  
+  /* ==========================================================================
+     Mobile - My Bag of Tricks - Main
+     ========================================================================== */
+  main .skill-group {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .skill-group .skill {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px 0 30px;
+    width: 100%;
+  }
+  
+  .skill .skill-name {
+    font-family: 'Righteous';
+    font-size: 1em;
+    margin: 0 0 20px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .skill .skill-description {
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 110px;
+    padding: 15px 0;
+    width: 100%;
+  }
+  
+  .skill-description .skill-icon-container {
+    border: 1px solid #c4c4c4;
+    height: 50px;
+    margin: 7px 0;
+    width: 50px;
+  }
+  
+  .skill-description .skill-text {
+    width: 70%;
+  }
+  
+  .skill-group:last-child {
+    margin-bottom: 40px;
+  }
+  
+  main .tech-group {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .tech-group .tech {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    height: 50px;
+    justify-content: flex-start;
+    margin: 10px 0 10px;
+    width: 100%;
+  }
+  
+  .tech .tech-icon-container {
+    border-right: 1px solid #c4c4c4;
+    height: 100%;
+    width: 50px;
+  }
+  
+  .tech .tech-text {
+    padding: 15px;
+  }
+  
+  .tech-group:last-child {
+    margin-bottom: 40px;
+  }
+  
+  /* ==========================================================================
+     Mobile - Contact Me - Main
+     ========================================================================== */
+  main .feedback-info {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+  
+  main #contact-form,
+  #contact-form label {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  main #contact-form {
+    margin: 10px 0 20px;
+  }
+  
+  #contact-form label {
+    margin-top: 30px;
+  }
+  
+  #contact-form .field-title {
+    font-weight: bold;
+    padding-left: 2px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .field-title .required {
+    color: #ff0000;
+  }
+  
+  #contact-form input,
+  #contact-form select,
+  #contact-form textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 13px;
+    width: 100%;
+  }
+  
+  #contact-form input {
+    
+  }
+  
+  #contact-form select {
+    background-color: #a846a0;
+    border: none;
+    color: #ffffff;
+  }
+  
+  #contact-form option {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  #contact-form textarea {
+    height: 120px;
+  }
+  
+  #contact-form .submit {
+    background-color: #23a092;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 150px;
+    padding: 15px;
+  }
+  
+  
+  /* ==========================================================================
+     Mobile - Footer Styles
+     ========================================================================== */
+  footer {
+    align-items: center;
+    border-top: 1px solid #c4c4c4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+  }
+
+  footer #social {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #social a {
+    margin: 0 10px;
+  }
+  
+  footer #copyright {
+    padding: 15px 0 5px;
+    text-align: center;
+    width: 100%;
+  }
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  @media only screen and (min-width: 768px) {
+  /* ==========================================================================
+     Tablet - Class Styles
+     ========================================================================== */
+    /* ==========================================================================
+       Tablet - General Class Styles
+       ========================================================================== */
+    .page-heading {
+    }
+    
+    .action-button {
+    }
+    
+    .drop-down-bar {
+      margin-bottom: 30px;
+      padding: 10px 20px;
+    }
+    
+    .list-item {
+    }
+    
+    
+    /* ==========================================================================
+       Tablet - Header Styles
+       ========================================================================== */
+    header {
+      padding: 15px 5%;
+    }
+    
+    header #menu {
+      width: 25%;
+    }
+
+    #menu #social {
+      width: 55%;
+    }
+    
+    #menu #menu-button {
+      font-size: 1.5em;
+    }
+    
+    
+    /* ==========================================================================
+       Tablet - All Main Styles
+       ========================================================================== */
+    main #nav-container {
+      padding: 15px 5%;
+    }
+    
+    main #page-container {
+      padding: 40px 5%;
+    }
+  
+    
+    /* ==========================================================================
+       Tablet - Home - Main
+       ========================================================================== */
+    #home #page-container {
+      padding: 50px 4%;
+    }
+    
+    main #intro-message {
+      width: 90%;
+    }
+    
+    #intro-message button {
+      margin-top: 15px;
+    }
+    
+    
+    /* ==========================================================================
+       Tablet - My Work - Main
+       ========================================================================== */
+    .project-card .project-description {
+      margin-bottom: 30px;
+    }
+    
+    .project-description .project-title {
+      padding: 15px 20px;
+    }
+  
+    .project-description .project-text {
+      padding: 15px 20px;
+    }
+
+    .project-description .tool-group {
+      padding: 0 20px;
+    }
+  
+    .tool-group .tool {
+      margin: 0 15px 10px 0;
+    }
+    
+    .project-card .project-img {
+      height: 200px;
+      margin: 0 20px;
+      width: 50%;
+    }
+
+    .project-card .project-links {
+      align-items: center;
+      justify-content: center;
+      width: 44%;
+    }
+  
+    .project-links .action-button {
+      width: 100%;
+    }
+  
+    
+    /* ==========================================================================
+       Tablet - My Bag of Tricks - Main
+       ========================================================================== */
+    .skill-group .skill {
+      width: 46%;
+    }
+    
+    main .tech-group {
+      width: 100%;
+    }
+    
+    .tech-group .tech {
+      width: 30%;
+    }
+    
+    /* ==========================================================================
+       Tablet - Contact Me - Main
+       ========================================================================== */
+    #contact-form input,
+    #contact-form select,
+    #contact-form textarea {
+      padding: 10px;
+    }
+    
+    #contact-form input {
+      width: 46%;
+    }
+    
+    #contact-form select {
+      width: 35%;
+    }
+  }
+
+
+   /* ==========================================================================
+      Desktop Styles
+      ========================================================================== */
+  @media only screen and (min-width: 1200px) {
+    /* ==========================================================================
+      Desktop - General Class Styles
+      ========================================================================== */
+    .page-heading {
+      margin-bottom: 50px;
+    }
+    
+    .action-button {
+    }
+    
+    .drop-down-bar {
+      margin-bottom: 50px;
+      padding: 15px 20px;
+    }
+    
+    .list-item {
+      justify-content: center;
+      width: 20%;
+    }
+    
+    
+    /* ==========================================================================
+      Desktop - Header Styles
+      ========================================================================== */
+    header {
+      padding: 20px 7%;
+    }
+      
+    header #menu {
+      width: 20%;
+    }
+
+    #menu #social {
+      width: 48%;
+    }
+    
+    #menu #menu-button {
+      font-size: 1.7em;
+    }
+    
+    
+    /* ==========================================================================
+      Desktop - All Main Styles
+      ========================================================================== */
+    main #nav-container {
+      padding: 5px 7%;
+    }
+    
+    main #page-container {
+      padding: 40px 7%;
+    }
+  
+    
+    /* ==========================================================================
+      Desktop - Home - Main
+      ========================================================================== */
+    #home #page-container {
+      padding: 80px 7%;
+    }
+    
+    main #intro-message {
+      width: 70%;
+    }
+    
+    #intro-message button {
+      margin-top: 20px;
+    }
+    
+    
+    /* ==========================================================================
+      Desktop - My Work - Main
+      ========================================================================== */
+    .project-card {
+      margin-bottom: 50px;
+      width: 46%;
+    }
+    
+    .project-card .project-description {
+      margin-bottom: 30px;
+    }
+    
+    .project-description .project-title {
+      padding: 20px 20px;
+    }
+    
+    .project-card .project-img {
+      height: 250px;
+      width: 100%;
+    }
+
+    .project-card .project-links {
+      align-items: center;
+      justify-content: space-between;
+      margin: 25px 20px 0;
+      width: 100%;
+    }
+  
+    .project-links .action-button {
+      margin: 0;
+      width: 46%;
+    }
+  
+    
+    /* ==========================================================================
+        Desktop - My Bag of Tricks - Main
+        ========================================================================== */
+    .skill-group .skill {
+      width: 46%;
+    }
+    
+    main .tech-group {
+      width: 100%;
+    }
+    
+    .tech-group .tech {
+      width: 30%;
+    }
+    
+    /* ==========================================================================
+        Tablet - Contact Me - Main
+        ========================================================================== */
+    #contact-form input,
+    #contact-form select,
+    #contact-form textarea {
+      padding: 10px;
+    }
+    
+    #contact-form input {
+      width: 46%;
+    }
+    
+    #contact-form select {
+      width: 35%;
+    }
+  }
+
+
+
+  
+  
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
